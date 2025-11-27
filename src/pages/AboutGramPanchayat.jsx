@@ -15,9 +15,9 @@ export default function AboutGramPanchayat() {
   }
   const tabs = [
     { key: 'overview', en: 'Overview', mr: 'आढावा'},
-    { key: 'demographics', en: 'Demographics', mr: 'आढावा'},
-    { key: 'education', en: 'Education', mr: 'आढावा'},
-    { key: 'culture', en: 'Culture', mr: 'आढावा'}
+    { key: 'demographics', en: 'Demographics', mr: 'लोकसंख्या'},
+    { key: 'education', en: 'Education', mr: 'शिक्षण'},
+    { key: 'culture', en: 'Culture', mr: 'संस्कृती'}
   ];
 
   const details = {
