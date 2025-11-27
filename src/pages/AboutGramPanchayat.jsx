@@ -6,6 +6,19 @@ import { AppContext } from '../context/AppContext';
 export default function AboutGramPanchayat() {
   const [field, setField] = useState('overview');
   const { language } = useContext(AppContext);
+  const tabClass = (isActive, isFirst) => {
+    const base = 'border-2 bg-cyan-300 rounded-2xl text-center py-1 px-4 hover:bg-amber-300 cursor-pointer transition';
+    const spacing = isFirst ? '' : 'mt-4';
+    const active = 'bg-amber-300 text-white';
+    const inactive = 'bg-cyan-300 text-black';
+    return `${base} ${spacing} ${isActive ? active : inactive}`;
+  }
+  const tabs = [
+    { key: 'overview', en: 'Overview', mr: 'आढावा'},
+    { key: 'demographics', en: 'Demographics', mr: 'आढावा'},
+    { key: 'education', en: 'Education', mr: 'आढावा'},
+    { key: 'culture', en: 'Culture', mr: 'आढावा'}
+  ];
 
   const details = {
     overview: {
@@ -118,11 +131,16 @@ export default function AboutGramPanchayat() {
       <div className='flex flex-col md:flex-row bg-gray-200 px-10 gap-5 py-10 md:h-[550px] justify-center'>
         <h1 className='text-black font-bold text-4xl self-center hidden md:flex' dangerouslySetInnerHTML={{ __html: (language === "en") ? "About <br />Gram <br />Panchayat" : "ग्रामपंचायतीबद्दल" }}></h1>
         <h1 className='text-black font-bold text-4xl self-center flex md:hidden text-center' dangerouslySetInnerHTML={{ __html: (language === "en") ? "About <br />Gram Panchayat" : "ग्रामपंचायतीबद्दल" }}></h1>
-        <div className='flex flex-col self-center mt-4 md:mt-0'>
-          <div className=' border-2 bg-cyan-300 rounded-2xl text-center py-1 px-4 hover:bg-amber-300 ' onClick={() => setField('overview')}>{language === "en" ? "Overview" : "आढावा"} </div>
-          <div className=' border-2 bg-cyan-300 rounded-2xl text-center py-1 px-4 mt-4 hover:bg-amber-300' onClick={() => setField('demographics')}>{language === "en" ? "Demographics" : "लोकसंख्या"} </div>
-          <div className=' border-2 bg-cyan-300 rounded-2xl text-center py-1 px-4 mt-4 hover:bg-amber-300' onClick={() => setField('education')}>{language === "en" ? "Education" : "शिक्षण"} </div>
-          <div className=' border-2 bg-cyan-300 rounded-2xl text-center py-1 px-4 mt-4 hover:bg-amber-300' onClick={() => setField('culture')}>{language === "en" ? "Culture" : "संस्कृती"} </div>
+        <div className='flex-col self-center'>
+          {tabs.map((tab,idx) => (
+            <div
+            key={tab.key}
+            onClick={() => setField(tab.key)}
+            className={tabClass(field === tab.key, idx === 0)}
+            >
+              {language === "en" ? tab.en : tab.mr}
+            </div>
+          ))}
         </div>
 
         <div className='flex max-w-[760px] flex-col bg-white rounded-2xl p-5 w-full mt-4 md:mt-0 max-h-[80vh] overflow-y-auto'>

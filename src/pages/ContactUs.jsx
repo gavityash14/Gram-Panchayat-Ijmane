@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
-import { sarpanch, deputy_sarpanch, panchayat_memeber_1, panchayat_memeber_2, panchayat_officer, panchayat_staff_1, } from '../assets/assets'
+import { sarpanch, deputy_sarpanch, panchayat_memeber_1, panchayat_memeber_2, panchayat_memeber_3, panchayat_officer, panchayat_staff_1, } from '../assets/assets'
 import Footer from '../components/Footer'
 
 
@@ -73,6 +73,15 @@ export default function ContactUs() {
                 className="h-[200px] w-[200px] object-cover rounded-full"
               />
               <h2 className="mt-3 text-lg font-semibold">श्री.जयेंद्रे निंबा म्हसदे</h2>
+              </div>
+            {/* Member  */}
+            <div className="flex flex-col items-center">
+              <img
+                src={panchayat_memeber_3}
+                alt="panchayat member"
+                className="h-[200px] w-[200px] object-cover rounded-full"
+              />
+              <h2 className="mt-3 text-lg font-semibold">सौ.पल्लवी श्रीराम निकम </h2>
               </div>
             </div>
 
