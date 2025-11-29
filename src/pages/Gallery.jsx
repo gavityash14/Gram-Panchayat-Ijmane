@@ -13,6 +13,7 @@ export default function Gallery() {
   // Pagination state
   const [imageVisibleCount, setImageVisibleCount] = useState(6);
   const [videoVisibleCount, setVideoVisibleCount] = useState(2);
+  const [imageLoadedCount, setImageLoadedCount] = useState(0);
 
   // Show next 6 images
   const showMoreImages = () => {
@@ -22,6 +23,12 @@ export default function Gallery() {
   const showMoreVideos = () => {
     setVideoVisibleCount((prev) => prev + 6);
   };
+
+  const handleImageLoad = () => {
+    setImageLoadedCount((prev) => prev + 1);
+  };
+
+  const allImageLoaded = imageLoadedCount === imageVisibleCount;
 
   return (
     <div>
@@ -33,6 +40,15 @@ export default function Gallery() {
         {/* Photos Section */}
         <section className="w-full max-w-6xl mb-16">
           <h2 className="text-2xl font-semibold mb-6">{language === "en" ? "Photo Gallery" : "फोटो गॅलरी"} </h2>
+          {console.log(allImageLoaded,imageLoadedCount,imageVisibleCount)}
+          {
+          !allImageLoaded && (
+            <div className='absolute inset-72 flex flex-col items-center justify-center bg-gray-600 z-10 border-2 border-black rounded-2xl'>
+              <div className='w-12 h-12 border-4 border-gray-300 border-t-blue-600 rounded-full animate-spin'></div>
+              <p className='text-white'>Loading Images ...</p>
+            </div>
+          )
+        }
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {Object.values(images).slice(0, imageVisibleCount).map((photo, index) => (
               <div
@@ -42,6 +58,7 @@ export default function Gallery() {
                 <img
                   src={photo.default}
                   alt={`Photo ${index + 1}`}
+                  onLoad={handleImageLoad}
                   className="w-full h-64 object-cover"
                   loading="lazy"
                 />
@@ -63,6 +80,7 @@ export default function Gallery() {
         </section>
 
         {/* Videos Section */}
+        {Object.values(videos).length > 0 && (
         <section className="w-full max-w-6xl">
           <h2 className="text-2xl font-semibold mb-6">{language === "en" ? "Video Gallery" : "व्हिडिओ गॅलरी"}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -99,7 +117,7 @@ export default function Gallery() {
               </button>
             </div>
           )}
-        </section>
+        </section>)}
       </div>  
       <Footer />
     </div>
