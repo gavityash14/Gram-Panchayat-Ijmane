@@ -12,7 +12,7 @@ export default function MythologicalSignificance() {
         <h1 className="text-black font-bold text-4xl">{language === "en" ? "Mythological Significance" : "पौराणिक महत्व"} </h1>
         <hr className='mt-5 mb-5' />
         
-          <h2 className='font-bold'>{language === "en" ? "Historical events of Ijamne village.":"इजामाने गावातील ऐतिहासिक घटना."}</h2>
+          <h2 className='font-bold'>{language === "en" ? "Historical events of Ijmane village.":"इजमाने गावातील ऐतिहासिक घटना."}</h2>
           {language === "en" ?
             (
           <ol className='list-decimal md:mt-4'>

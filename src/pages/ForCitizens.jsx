@@ -85,8 +85,8 @@ export default function ForCitizens() {
 
               <h3 className="text-start font-bold mt-16">
                 {language === 'en'
-                  ? 'Your Government Service Center, Sakode'
-                  : 'आपले सरकार सेवा केंद्र, साकोडे'}
+                  ? 'Your Government Service Center, Ijmane'
+                  : 'आपले सरकार सेवा केंद्र, इजमाने'}
               </h3>
 
               <p
@@ -94,8 +94,8 @@ export default function ForCitizens() {
                 dangerouslySetInnerHTML={{
                   __html:
                     language === 'en'
-                      ? '<strong>Center Operator:</strong> Dattu Babulal Thakre <br />Mobile Number: 9604261186'
-                      : '<strong>केंद्र चालक:</strong> दत्तू बाबूलाल ठाकरे <br />मोबाईल क्रमांक: 9604261186',
+                      ? '<strong>Center Operator:</strong> Bijo Abhi Kakde <br />Mobile Number: 9623628987'
+                      : '<strong>केंद्र चालक:</strong> बिजो अभि काकडे <br />मोबाईल क्रमांक: 9623628987',
                 }}
               ></p>
             </div>
@@ -118,7 +118,7 @@ export default function ForCitizens() {
               ></iframe>
             </div>
             <div className="w-full md:w-[50%] flex-row md:ml-5 mt-5 md:mt-0">
-              <h1 className="mb-8">{language === "en" ? "Residence Self-Declaration" : "रदिवासी स्वयांघोषणापत्र"} </h1>
+              <h1 className="mb-8">{language === "en" ? "Residence Self-Declaration" : "रहिवासी स्वयांघोषणापत्र"} </h1>
               <iframe
                 width="100%"
                 src={residence_self_declaration}

@@ -23,13 +23,13 @@ export default function AboutGramPanchayat() {
   const details = {
     overview: {
       title: "Ijmane Gram Panchayat",
-      details: `Ijamane is a village in Baglan (Satana) taluka of Nashik district, Maharashtra. It is governed locally by the Ijamane (listed as “Ejamane”) Gram Panchayat. The geographical area of the village is approximately 525 hectares.<br />The village of Ijmane was included in the village panchayat. The village panchayat was established in 1965 and has a total of 7 members, out of which 2 seats are reserved for women and 3 seats are reserved for men.<br />According to the 2011 census, the total population of Khamlon village is 968, out of which 148 are SC and 489 are ST. Total households are 178.`,
-      mr_title: "खामलोन ग्रामपंचायत",
-      mr_details: `इजामने हे महाराष्ट्रातील नाशिक जिल्ह्यातील बागलाण (सटाणा) तालुक्यातील एक गाव आहे. स्थानिक पातळीवर इजामने ("एजामने" म्हणून सूचीबद्ध) ग्रामपंचायतीद्वारे हे गाव शासित आहे. गावाचे भौगोलिक क्षेत्रफळ अंदाजे ५२५ हेक्टर आहे.
+      details: `Ijmane is a village in Baglan (Satana) taluka of Nashik district, Maharashtra. It is governed locally by the Ijmane (listed as “Ejamane”) Gram Panchayat. The geographical area of the village is approximately 525 hectares.<br />The village of Ijmane was included in the village panchayat. The village panchayat was established in 1965 and has a total of 7 members, out of which 2 seats are reserved for women and 3 seats are reserved for men.<br />According to the 2011 census, the total population of Khamlon village is 968, out of which 148 are SC and 489 are ST. Total households are 178.`,
+      mr_title: "इजमाने ग्रामपंचायत",
+      mr_details: `इजमाने हे महाराष्ट्रातील नाशिक जिल्ह्यातील बागलाण (सटाणा) तालुक्यातील एक गाव आहे. स्थानिक पातळीवर इजामने ("एजामने" म्हणून सूचीबद्ध) ग्रामपंचायतीद्वारे हे गाव शासित आहे. गावाचे भौगोलिक क्षेत्रफळ अंदाजे ५२५ हेक्टर आहे.
 <br />
 इजामने हे गाव ग्रामपंचायतीत समाविष्ट होते. १९६५ मध्ये ग्रामपंचायतीची स्थापना झाली आणि त्यात एकूण ७ सदस्य आहेत, त्यापैकी २ जागा महिलांसाठी राखीव आहेत आणि ३ जागा पुरुषांसाठी राखीव आहेत.
 <br />
-इजामने गावाची एकूण लोकसंख्या ९६८ आहे, त्यापैकी १४८ अनुसूचित जाती आणि ४८९ अनुसूचित जमाती आहेत. एकूण कुटुंबे १७८ आहेत.`
+इजमाने गावाची एकूण लोकसंख्या ९६८ आहे, त्यापैकी १४८ अनुसूचित जाती आणि ४८९ अनुसूचित जमाती आहेत. एकूण कुटुंबे १७८ आहेत.`
     },
     demographics: {
       title: "Population and Geographic Information",
@@ -80,7 +80,7 @@ export default function AboutGramPanchayat() {
 <br />
 जि.प.प्राथमिक शाळा-1
 <br />
-• खामलोन (वर्ग 1 ते 4): मुले-19, मुली-24
+• इजमाने (वर्ग 1 ते 4): मुले-19, मुली-24
 <br />
 अंगणवाडी केंद्र-2
 <br />
@@ -91,7 +91,7 @@ export default function AboutGramPanchayat() {
     culture: {
       title: "Cultural Information",
       details: `People & community composition:<br />
-      • Ijamane has a large Scheduled-Tribe (ST) population (≈481 people in 2011), plus SC and other groups — so tribal customs and community life are important locally.<br />
+      • Ijmane has a large Scheduled-Tribe (ST) population (≈481 people in 2011), plus SC and other groups — so tribal customs and community life are important locally.<br />
       • At the taluka level, the native/major tribal groups in Baglan include Bhil / Bhilala / Pawra / Vasava and related communities; these communities influence local cultural practices.<br /><br />
       Language & oral culture:<br />
       • Marathi is the main language; local speech will also show Ahirani / Khandeshi influences (Ahirani is commonly spoken in parts of Baglan/Nashik). Expect local idioms, proverbs and folk songs in Ahirani/Marathi.<br /><br />
@@ -106,7 +106,7 @@ export default function AboutGramPanchayat() {
       mr_title: "सांस्कृतिक माहिती",
       mr_details: `लोक आणि समुदाय रचना:
 <br />
-• इजामाने येथे अनुसूचित जमाती (एसटी) लोकसंख्या मोठी आहे (२०११ मध्ये ≈४८१ लोक), तसेच अनुसूचित जाती आणि इतर गट - त्यामुळे स्थानिक पातळीवर आदिवासी रीतिरिवाज आणि समुदाय जीवन महत्त्वाचे आहे.<br />
+• इजमाने येथे अनुसूचित जमाती (एसटी) लोकसंख्या मोठी आहे (२०११ मध्ये ≈४८१ लोक), तसेच अनुसूचित जाती आणि इतर गट - त्यामुळे स्थानिक पातळीवर आदिवासी रीतिरिवाज आणि समुदाय जीवन महत्त्वाचे आहे.<br />
 • तालुका पातळीवर, बागलाणमधील स्थानिक/प्रमुख आदिवासी गटांमध्ये भिल्ल/भिलाला/पवडा/वसावा आणि संबंधित समुदायांचा समावेश आहे; हे समुदाय स्थानिक सांस्कृतिक पद्धतींवर प्रभाव पाडतात.<br />
 <br />
 भाषा आणि मौखिक संस्कृती:<br />
