@@ -59,7 +59,7 @@ export default function Home() {
             loading="lazy"
           />
           <h2 className="mt-3 text-lg font-semibold">{language === "en" ? "Shri. Girish Mahajan" : "श्री. गिरीश महाजन"}   </h2>
-          <h3 className="text-[16px]">{language === "en" ? "Hon. Guardian Minister" : "माननीय पालकमंत्रि"} </h3>
+          <h3 className="text-[16px]">{language === "en" ? "Hon. Guardian Minister" : "माननीय पालकमंत्री"} </h3>
         </div>
       </div>
       <Footer />
